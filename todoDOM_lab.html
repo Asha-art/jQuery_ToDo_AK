@@ -1,0 +1,40 @@
+<!-- Lab
+Let's create a simple todo application
+• Show an unordered list of todo's
+• Show an input to enter a new todo
+• Show a button to add a todo. When the button is clicked:
+• The text from the input box is used to add a list item to the
+bottom of the list
+• The text from the input box is cleared out.
+• When the user clicks on a list item, it is removed
+• Extra Credit: - When a list item is clicked, cross it out,
+then remove it after 1 second.
+• Complete the CodeSchool jQuery course -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<div  style="border:1px solid rgba(83, 72, 94, 0.377); padding:20px; margin: 10px;">
+<h1> To-Do Application</h1>
+
+
+    <input type="text" name="inputTodo" id="addTodo">
+    <button id="changeBackground" onclick="addList()"> Add a new To-Do </button>
+
+    <p>Add your To-Do list below</p>
+
+    <ul id = "list">
+    </ul>
+</div>   
+
+
+<script src="todoDOM_lab.js"></script>
+</body>
+</html>
