@@ -7,19 +7,26 @@ input {
     padding: 10px;
     float: center;
     font-size: 16px;
-   
+       
   }
   
+  
 /* Style the header */
-h1{
+header{
     background-color: #a9150a;
-    padding: 30px 40px;
+    padding: 40px 40px;
     color: white;
     text-align: center;
   }
 
+  p, ul li{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+
+  }
+
   /* Style the list items */
-ul li {
+div, ul li {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
@@ -28,17 +35,23 @@ ul li {
     transition: 0.2s;
 
   }
+  /* Darker background-color on hover */
+ul li:hover {
+  background: #444444;
+  color: rgb(248, 220, 149);
+}
+
 /* When clicked on, add a background color and strike out text */
-ul li.checked{
-    /* background: #888;
-    color: #fff; */
+ul li#strike{
+    background: #888;
+    color: #fff; 
     text-decoration: line-through;
   }
 
 /* Style the "Add" button */
-.addBtn {
+#addBtn {
     padding: 10px;
-    width: 25%;
+    width: 22%;
     background: #d9d9d9;
     color: #555;
     float: center;
@@ -50,7 +63,7 @@ ul li.checked{
   
   }
   
-  .addBtn:hover {
+  #addBtn:hover {
     background-color: rgb(20, 11, 11);
     color: white;
   }
